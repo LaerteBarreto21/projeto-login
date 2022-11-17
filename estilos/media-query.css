@@ -17,6 +17,7 @@ Some common breakpoints for devices with different screen sizes are:
     }
     section#login{
         width: 80%;
+        height: 430px;
     }
     section#login > div#imagem{
         float: left;
@@ -46,7 +47,8 @@ Some common breakpoints for devices with different screen sizes are:
         background-image: linear-gradient(to left, #6C7073, #D9042B);
     }
     section#login{
-        width: 890px
+        width: 890px;
+        height: 445px;
     }
     section#login > div#imagem{
         float: right;

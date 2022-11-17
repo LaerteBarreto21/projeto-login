@@ -33,16 +33,16 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     overflow: hidden;
-
+    
     background-color: white;
     width: 370px;
     height: 520px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px #0d0d0d7f;
-
-    transition: width .5s, height .5s;
+    
+    transform: translate(-50%,-50%);
+    transition: width .4s, height .4s;
     transition-timing-function: ease;
 }
 section#login > div#imagem{
@@ -67,6 +67,8 @@ div#formulario > h1{
 }
 div#formulario > p{
     font-size: 0.8em;
+    text-align: center;
+    line-height: 1.3em;
 }
 
 form > div.campo{
@@ -75,16 +77,35 @@ form > div.campo{
     display: block;
     height: 50px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 15px 0px;
     border: #343434 solid 3px;
 }
 form > div.campo > label{
     display: none;
 }
-form > div.campo > input{
-    width:80%;
-    height: 30px;
+form > div.campo > span{
+    color: white;
+    background-color: #BF7E04;
+    font-size: 2em;
+    width: 45px;
+    padding: 6.4px;
+    border-radius: 5px 0px 0px 5px;
+}
+form>div.campo>input{
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+    padding: 4px;
+    transform: translateY(-45px) translateX(+45px);
+}
+form>div.campo>input:focus-within{
+    background-color: #cecece;
+    
 }
 
 form > input[type=submit]{
@@ -96,7 +117,7 @@ form > input[type=submit]{
     background-color: #343434;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.52);
     cursor: pointer;
 }
@@ -108,7 +129,7 @@ form > input[type=submit]:hover{
     color: #D9042B;
     background-color: #6C7073;
     border: solid 2px #BF7E04;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.52);
     cursor: pointer;
 }
@@ -123,7 +144,7 @@ form > a.botao{
     text-decoration: none;
     color: #424242;
     border: solid 2px #BF7E04;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 form > a.botao:hover{
     display: block;
@@ -131,8 +152,12 @@ form > a.botao:hover{
     text-decoration: none;
     color: white;
     background-color: #D9042B;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 10px;
     height: 40px;
     width: 100%;
+}
+div#formulario > form> a > span.material-symbols-outlined{
+    transform: translateY(5px) translateX(20px);
+    font-size: 1.6em;
 }
