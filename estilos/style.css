@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Paleta de Cores
+    vermelho: #D9042B
+    cinza claro: #B4BBBF
+    cinza Medio: #6C7073
+    Amarelo escuro: #BF7E04
+    Preto: #0D0D0D
+
+    fonts:
+    font-family: 'Silkscreen', cursive;
+    font-family: 'Spline Sans Mono', monospace;
+*/
+
+
+*{
+    font-family: 'Silkscreen', cursive;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #6C7073;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #0d0d0d7f;
+}
+section#login > div#imagem{
+    display: block;
+    background: #6C7073 url(../imagens/tela-fundo.jpg);
+    color: #B4BBBF;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 15px;
+}
+section#login > div#formulario > p , label, a{
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 500;
+}

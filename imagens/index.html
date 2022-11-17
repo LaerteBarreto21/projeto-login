@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Foto -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja Bem-Vindo Novamente! Faça Login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login" method="post" autocomplete="on" >
+                    <p>
+                        <label for="iuser">Usuário</label>
+                        <input type="email" name="user" id="iuser" required minlength="15" maxlength="40"> 
+                    </p>
+                    <p>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" required minlength="8">
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                    <p>
+                        <a href="#" target="_blank" >Cadastre-se</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank" > Esqueci a senha</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
