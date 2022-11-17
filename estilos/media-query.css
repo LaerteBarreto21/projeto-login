@@ -20,7 +20,7 @@ Some common breakpoints for devices with different screen sizes are:
     }
     section#login > div#imagem{
         float: left;
-        width: 35%;
+        width: 40%;
         height: 100%;
 
         background-size: cover;
