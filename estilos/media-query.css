@@ -32,6 +32,14 @@ Some common breakpoints for devices with different screen sizes are:
         width: 60%;
         height: 100%;
     }
+    div#formulario > h1{
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    div#formulario > p{
+        font-size: 1em;
+    }
 }
 @media screen and (min-width: 992px) {
     body{
@@ -41,7 +49,7 @@ Some common breakpoints for devices with different screen sizes are:
         width: 890px
     }
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
 
@@ -51,7 +59,15 @@ Some common breakpoints for devices with different screen sizes are:
 
     }
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
+    }
+    div#formulario > h1{
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    div#formulario > p{
+        font-size: 1.2em;
     }
 }

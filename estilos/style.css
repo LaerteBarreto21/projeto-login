@@ -37,7 +37,7 @@ section#login{
     overflow: hidden;
 
     background-color: white;
-    width: 320px;
+    width: 350px;
     height: 500px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px #0d0d0d7f;
@@ -59,4 +59,12 @@ section#login > div#formulario{
 section#login > div#formulario > p , label, a{
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
+}
+div#formulario > h1{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
 }
